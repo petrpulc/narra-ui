@@ -20,4 +20,4 @@
 #
 
 angular.module('narra.ui').factory 'serviceServer', ->
-  url: 'http://api.narra.eu'
+  url: 'http://neptun.avc-cvut.cz:8080'
