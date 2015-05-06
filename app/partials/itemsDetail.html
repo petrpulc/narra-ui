@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with Narra Core. If not, see <http://www.gnu.org/licenses/>.
 #
-# Authors: Michal Mocnak <michal@marigan.net>
+# Authors: Michal Mocnak <michal@marigan.net>, Petr Pulc <petrpulc@gmail.com>
 #
 -->
 
@@ -76,6 +76,11 @@
                     <input type="text" class="form-control" ng-model="search" placeholder="Search">
                 </div>
                 <ul class="side-buttons">
+                    <li ng-show="item.video_copy">
+                        <a class="btn btn-danger btn-xs" href="{{item.video_copy}}" download="{{item.id}}.mp4"><span class="fa fa-download"></span>
+                            Download
+                        </a>
+                    </li>
                     <li>
                         <button class="btn btn-danger btn-xs dropdown-toggle" type="button" data-toggle="dropdown"
                                 aria-expanded="false">
